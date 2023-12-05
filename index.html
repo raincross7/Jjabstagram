@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJabstagram</title>
+    <link rel="stylesheet" href="statics/CSS/index.css">
+    <script defer src="statics/JS/index.js"></script>
+</head>
+<body>
+    <section id="wrapper">
+        <img src="statics/images/main.png">
+        <div>
+            <h1><a href="#">JJabstagram</a></h1><br>
+            
+            <input id="id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일"><br>
+            <input id="password" type="password" placeholder="비밀번호"><br>
+            <button id="input" type="button" onclick="chkUser()">로그인</button><br>
+            <div id="or">
+                <img src="statics/images/line.png">
+            </div>
+            <a href="https://www.facebook.com/?locale=ko_KR"><button><img src="statics/images/face.png"></button></a><br>
+            <p id="wrong">잘못된 비밀번호입니다. 다시 확인하세요.</p>
+            <a href="https://www.google.com/search?q=비밀번호"><button>비밀번호를 잊으셨나요?</button></a>
+        </div>
+        <div>
+            <p id="noID-p">계정이 없으신가요?</p>
+            <a href="https://www.google.com/search?q=회원가입"><button id="noID-b" type="button" style="cursor: pointer;">가입하기</button></a>
+        </div>
+        <div>
+            <p id="goDown">앱을 다운로드 하세요.</p>
+            <div id="download">
+                <button id="google" type="button" onclick="goGoogle()"><img src="statics/images/googledown.png"></button>
+                <button id="goMicrosoft" type="button" onclick="goMicrosoft()"><img src="statics/images/microsoftdown.png"></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <a href="https://www.google.com/search?q=1"><button type="button">Meta</button></a>
+            <a href="https://www.google.com/search?q=2"><button type="button">소개</button></a>
+            <a href="https://www.google.com/search?q=3"><button type="button">블로그</button></a>
+            <a href="https://www.google.com/search?q=4"><button type="button">채용 정보</button></a>
+            <a href="https://www.google.com/search?q=5"><button type="button">도움말</button></a>
+            <a href="https://www.google.com/search?q=6"><button type="button">API</button></a>
+            <a href="https://www.google.com/search?q=7"><button type="button">개인정보처리방침</button></a>
+            <a href="https://www.google.com/search?q=8"><button type="button">약관</button></a>
+            <a href="https://www.google.com/search?q=9"><button type="button">위치</button></a>
+            <a href="https://www.google.com/search?q=10"><button type="button">Instagram Lite</button></a>
+            <a href="https://www.google.com/search?q=11"><button type="button">Threads</button></a>
+            <a href="https://www.google.com/search?q=12"><button type="button">연락처 업로드 & 비사용자</button></a>
+            <a href="https://www.google.com/search?q=13"><button type="button">Meta Verified</button></a>
+        </div>
+        <div>
+            <select id="language" onchange="changeLanguage()">
+                <option value="op1" selected>한국어</option>
+                <option value="op2">中国人</option>
+                <option value="op3">English</option>
+                <option value="op4">日本語</option>
+            </select>
+            <p>&copy; 2023 Instagram from Meta</p>
+        </div>
+    </footer>
+</body>
+</html>
